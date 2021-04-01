@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Alt_Fire.wav-c3abc447b5b9e006c75cdd12b6d58bee.sample"
+
+[deps]
+
+source_file="res://Sounds/Alt_Fire.wav"
+dest_files=[ "res://.import/Alt_Fire.wav-c3abc447b5b9e006c75cdd12b6d58bee.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

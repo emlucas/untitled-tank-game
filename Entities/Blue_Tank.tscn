@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Entities/Tank.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Overlap/PlayerDetection.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/Enemy_Tank.gd" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 239.075
+
+[node name="Blue_Tank" instance=ExtResource( 1 )]
+modulate = Color( 0.560784, 0.8, 0.796078, 1 )
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="1"]
+frame = 0
+
+[node name="PlayerDetection" parent="." index="9" instance=ExtResource( 2 )]
+
+[node name="CollisionShape2D" parent="PlayerDetection" index="0"]
+visible = false
+shape = SubResource( 1 )
+
+[editable path="Hurtbox"]
+
+[editable path="PlayerDetection"]
